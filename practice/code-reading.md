@@ -16,6 +16,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+Answer:
+Line 1 = Scope global, Line 4 = Scope local (to function).
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +37,15 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+Answer:
+10
+Undefined
+ReferenceError
+
+10 because x is a global scope
+Undefined because there isn't a return something
+ReferenceError because y is a local scope and is printed outside
 
 ## Question 3
 
@@ -62,3 +74,9 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Answer:
+9
+{x: 10}
+
+9 because x was declared outside (global scope)
+{x:10} because was declared outside and 1 was added as local scope on y.x (y is a object)
